@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["abs","计算绝对值 #例子 ``` let a = abs(-20); ```"]]});
