@@ -4,4 +4,4 @@ fn main(){
     println!("{}", mount);
     let mount = "你好";
     println!("{}", mount);
-}
+}   
