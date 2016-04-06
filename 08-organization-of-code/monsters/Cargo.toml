@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["liulixiang1988 <liulixiang1988@gmail.com>"]
 
 [dependencies]
+log="0.3.6"
+mac="*"

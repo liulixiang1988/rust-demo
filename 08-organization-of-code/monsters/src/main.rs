@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate log;
+extern crate mac;
 extern crate monsters;
 use monsters::Monster;
 fn main() {
@@ -6,4 +9,5 @@ fn main() {
     println!("我听见{}", zmb1.noise());
     zmb1.attack();
     println!("{:?}", zmb1);
+    info!("获取信息：{:?}", zmb1);
 }
