@@ -1,3 +1,5 @@
+mod modul1;
+mod modul2;
 mod game1 {
     fn func1(){
         println!("我是不是可见的?");
@@ -21,9 +23,17 @@ mod game1 {
     }
 }
 
+use game1::func2 as gf2;
+use modul1::func1 as mf1;
+
 fn main() {
     //game1::func1(); //错误
     game1::func2();
+    gf2();
     let mag1 = game1::Magician::new("Liu Lixiang".to_string(), 28, 100);
     println!("{:?}", mag1);
+
+    modul1::func1();
+    mf1();
+    modul2::func1();
 }
