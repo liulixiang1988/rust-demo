@@ -1,3 +1,5 @@
+use std::convert::TryInto;
+
 fn main() {
     println!("Hello, world!");
     let a = 10;
@@ -14,6 +16,22 @@ fn main() {
     println!("base 2 {:b} {:b} {:b}", three, thirty, three_hundred);
     println!("base 8 {:o} {:o} {:o}", three, thirty, three_hundred);
     println!("base 16 {:x} {:x} {:x}", three, thirty, three_hundred);
+
+    let aa: i32 = 10;
+    let bb: u16 = 20;
+
+    if aa > bb as i32 {
+        println!("aa > bb");
+    } else {
+        println!("aa <= bb");
+    }
+
+    let bb_ = bb.try_into().unwrap();
+    if aa < bb_ {
+        println!("aa < bb");
+    } else {
+        println!("aa >= bb");
+    }
 }
 
 fn add(a: i32, b: i32) -> i32 {
